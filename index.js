@@ -1,21 +1,18 @@
-console.log("sub")
+// import {x} from './app'
 
-var a = 20;
-var b = 30;
-var c = 40;
+// -----
+const app = require('./app')
 
-console.warn(a + b + c)
+console.log(app)
+console.log(app.x)
+console.log(app.y)
+console.log(app.z())
 
-// JS Basics
-var x = 20
-if(x===20) {
-    console.log("Matched")
-}
+// ---
 
-for(i=0; i<10; i++){
-    console.log(i);
-}
+const arr=[2,3,4,5,6,7,3,8,2]
 
-const arr=[2,4,7,1,3,8,3];
-console.log(arr);
-
+let result = arr.filter((item) => {
+    return item > 3
+})
+console.warn(result)
