@@ -10,4 +10,4 @@ module.exports = {
     z:function () {
         return 7;
     }
-}
+}                           
