@@ -1,9 +1,2 @@
-const http = require('http');
-
-function dataControl (req, resp) {
-    resp.write("<h1>Hello There Sinchana here!</h1>");
-    resp.end();
-}
-
-http.createServer(dataControl).listen(4700);
-
+const colors = require('colors')
+console.log("file - package.json updated".blue)
