@@ -1,7 +1,9 @@
 const http = require('http');
 
-http.createServer((req, resp) => {
+function dataControl (req, resp) {
     resp.write("<h1>Hello There Sinchana here!</h1>");
     resp.end();
-}).listen(4700);
+}
+
+http.createServer(dataControl).listen(4700);
 
